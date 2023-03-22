@@ -27,8 +27,18 @@ namespace View
 
         private void ConvertToCelsius(object sender, RoutedEventArgs e)
         {
-            textBox.Text = "button click";
-            /*MessageBox.Show(this, "button go click", "clickedyclakc");*/
+            double i = double.Parse(textBox.Text);
+            i = i - 32;
+            i = i * 0.5556;
+            MessageBox.Show(this, i.ToString(), "celcus");
+        }
+
+        private void ConvertToFahr(object sender, RoutedEventArgs e)
+        {
+            double i = double.Parse(textBox.Text);
+            i = i / 0.5556;
+            i = i + 32;
+            MessageBox.Show(this, i.ToString(), "fahur");
         }
     }
 }
