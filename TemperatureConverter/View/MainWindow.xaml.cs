@@ -40,5 +40,6 @@ namespace View
             i = i + 32;
             MessageBox.Show(this, i.ToString(), "fahur");
         }
+
     }
 }
